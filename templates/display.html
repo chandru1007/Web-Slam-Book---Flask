@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+    <script type="text/javascript">
+        window.onload = function(){
+                        alert("Please set to desktop site\nScreencap and send to your friend");
+                        }
+        </script>
+    <script>
+        function myFunction() {
+          var copyText = document.getElementById("myInput");
+          copyText.select();
+          copyText.setSelectionRange(0, 99999)
+          document.execCommand("copy")
+        }
+        </script>
+<style>
+    body, html {
+        width: 100%;
+        margin: 0;
+        height: 100%;
+
+        }
+    .bg {
+          /* The image used */
+          background-image: url("/static/disp.jpg");
+
+          /* Full height */
+          width: 100%;
+
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      .name_head {
+        font-family:cursive;
+        font-size: 10;
+        color:rgb(10, 195, 241);
+      }
+      .name_head1 {
+        font-family:serif;
+        font-size: 10;
+        color:rgb(184, 18, 18);
+      }
+
+      .last {
+        background-color: rgb(226, 228, 228);
+      }
+
+      p {
+        color:rgb(226, 91, 13);
+      }
+      .bg {
+          /* The image used */
+          background-image: url("/static/images/disp.jpg");
+      }
+</style>
+</head>
+<body>
+
+    <div class="bg">
+
+        <div class="container">
+            <h6 class="name_head1">
+                <br>
+                "Things End but Memories last Forever" &#128525;
+            </h6>
+            <h4 class="name_head">
+                Haii {{rec.input2}} &nbsp; &#128521; <br>
+            </h4>
+
+            <table border="0">
+                <tr>
+                    <td>Contact Name &#128241; </td>
+                    <td style="color: #0baf4a;">{{rec.input1}}</td>
+                </tr>
+                <tr>
+                    <td>Nick Name &#128517;</td>
+                    <td style="color: #4c00ff;">{{rec.input2}}</td>
+                </tr>
+                <tr>
+                    <td>Relationship&#128522;</td>
+                    <td  style="color: #ec0d3d;">{{rec.input3}}</td>
+                </tr>
+                <tr>
+                    <td>like&#128525; </td>
+                    <td  style="color: #92c702;">{{rec.input4}}</td>
+                </tr>
+                <tr>
+                    <td>Dislike&#128580; </td>
+                    <td style="color: #cc06fd;">{{rec.input5}}</td>
+                </tr>
+                <tr>
+                    <td>Impression &#128521;</td>
+                    <td style="color: #ec0d0d;">{{rec.input6}}</td>
+                </tr>
+                <tr>
+                    <td width=20%>Rumor&#128517;</td>
+                    <td style="color: #ec5f0d;">{{rec.input7}}</td>
+                </tr>
+                <tr>
+                    <td>Secret &#128521;</td>
+                    <td  style="color: #0dd2ec;">{{rec.input8}}</td>
+                </tr>
+                <tr>
+                    <td>childhood Aim &#128519;</td>
+                    <td style="color: #e40dec;">{{rec.input9}}</td>
+                </tr>
+                <tr>
+                    <td>At free tym &#9200;</td>
+                    <td style="color: #ec1c0dee;">{{rec.input10}}</td>
+                </tr>
+                <tr>
+                    <td>dream location&#128131; </td>
+                    <td style="color: #3f0897;">{{rec.input11}}</td>
+                </tr>
+                <tr>
+                    <td>Song  &#128517;</td>
+                    <td  style="color: #03180bee;">{{rec.input12}}</td>
+                </tr>
+                <tr>
+                    <td>A msg &#128525;</td>
+                    <td style="color: #e40fc7;">{{rec.input13}}</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+  <div class="last">
+    <div class="text-center">
+    <p >"COPY" below link & Share to get Exciting answers!</p>
+    <input readonly type="text" value="http://chandru17l109.pythonanywhere.com/slam_home" id="myInput" >
+    <button onclick="myFunction()">Copy Link</button>
+    <br><br>
+    </div>
+</div>
+</body>
+</html>
