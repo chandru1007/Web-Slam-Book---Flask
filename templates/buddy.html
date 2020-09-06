@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    body, html {
+        width: 100%;
+        margin: 0;
+        }
+    .bg {
+          /* The image used */
+          background-image: url("/static/images/try3bg1.jpg");
+        
+          /* Full height */
+          width: 100%; 
+        
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      .name_head {
+        font-family:"Verdana, Geneva, Tahoma, sans-serif";
+        font-size: 15;
+        color:rgb(236, 12, 12);
+      }
+</style>
+</head>
+<body>
+  
+
+<div class="bg">
+         
+          <div class="container">
+          {% block content %}
+
+          <form action="display" method="POST">
+            <fieldset>
+              <legend>
+                <p class="name_head">
+                 Welcome!<br> Give some Exciting Answers
+               </p>
+               </legend>
+         <div class="form-group row">
+          <div class="col-sm-4">  My name on your phone?  &nbsp; &#128241;</div>
+          <div class="col-sm-6"><input type="text" class="form-control" name="input1" placeholder="Your's answer" required style="color: #0baf4a;"></div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-4">Any nick name for me? &nbsp; &#128517;  </div>
+          <div class="col-sm-6"><input type="text" class="form-control" name="input2" placeholder="Your's answer" required style="color: #4c00ff;"></div>
+        </div>
+        <div class="form-group row">
+          
+          <div class="col-sm-4">&#128522; &nbsp; Relationship b/w u and  me?</div>
+          <div class="col-sm-6"><input type="text" class="form-control" name="input3" placeholder="Your's answer" required style="color: #ec0d3d;"></div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-4">something u like on me &nbsp; &#128525; </div>
+          <div class="col-sm-6"><input type="text" class="form-control" name="input4" placeholder="Your's answer" required style="color: #92c702;"></div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-4"> &nbsp; &#128580; something u dislike on me </div>
+          <div class="col-sm-6"><input type="text" class="form-control" name="input5" placeholder="Your's answer" required style="color: #cc06fd;"></div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-4">What is ur impression on me  &nbsp; &#128521;</div>
+          <div class="col-sm-6"><input type="text" class="form-control" name="input6" placeholder="Your's answer" required style="color: #ec0d0d;"></div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-4"> &nbsp; &#128517; One funniest rumor u want to share with me </div>
+          <div class="col-sm-6"><input type="text" class="form-control" name="input7" placeholder="Your's answer" required  style="color: #bcec0d;"></div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-4">one secret u want to share with me  &nbsp; &#128521;</div>
+          <div class="col-sm-6"><input type="text" class="form-control" name="input8" placeholder="Your's answer" required style="color: #0dd2ec;"></div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-4">What is ur aim in your childhood  &nbsp; &#128519;</div>
+          <div class="col-sm-6"><input type="text" class="form-control" name="input9" placeholder="Your's answer" required style="color: #e40dec;"></div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-4">what would you like to do in ur free tym   &nbsp; &#9200;</div>
+          <div class="col-sm-6"><input type="text" class="form-control" name="input10" placeholder="Your's answer" required style="color: #0dec0dee;"></div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-4"> &nbsp; &#128131;  what is your dream vacation location   </div>
+          <div class="col-sm-6"><input type="text" class="form-control" name="input11" placeholder="Your's answer" required style="color: #ec9e0d;"></div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-4">A song you want to dedicate to me  &nbsp; &#128517;</div>
+          <div class="col-sm-6"><input type="text" class="form-control" name="input12" placeholder="Your's answer"required style="color: #0deca2;"></div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-4">Finally a note/msg for me   &nbsp; &#128525;</div>
+          <div class="col-sm-6"><input type="text" class="form-control" name="input13" placeholder="Your's answer" required style="color: #1d6621;"></div>
+        </div>
+      
+   </div>
+<div> 
+  <div class="text-center" >
+    <input type="submit" value="Submit" class="btn btn-info btn-lg">
+  </div>
+</div>
+</fieldset>
+</form>
+{% endblock content%}
+</div>
+</body>
+</html>
